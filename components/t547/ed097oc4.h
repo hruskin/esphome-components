@@ -53,7 +53,7 @@ void epd_end_frame();
  * This sequence of operations allows for pipelining data preparation and
  * transfer, reducing total refresh times.
  */
-void IRAM_ATTR epd_output_row(uint32_t output_time_dus);
+IRAM_ATTR void epd_output_row(uint32_t output_time_dus);
 
 /** Skip a row without writing to it. */
 void IRAM_ATTR epd_skip();
